@@ -6,7 +6,18 @@ input="$1"
 # Temporary file for salts
 declare -A salts
 
+first_line=true
+
 while IFS=, read -r name rest; do
+    if $first_line; then
+        # Print header untouched
+        echo "$name,$rest"
+
+	#added first_line=false to not salt / hash header
+        first_line=false
+        continue
+    fi
+
     # generate a unique 5-character salt for each user if not already generated
     if [[ -z "${salts[$name]}" ]]; then
         salt=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c5)
