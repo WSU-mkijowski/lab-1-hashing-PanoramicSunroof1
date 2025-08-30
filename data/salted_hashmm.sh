@@ -1,5 +1,5 @@
 #!/bin/bash
-# Usage: ./salted_hash.sh quiz_data.csv > salted-data.csv
+# Usage: ./salted_hashmm.sh quiz_data.csv > salted-data.csv
 
 input="$1"
 
