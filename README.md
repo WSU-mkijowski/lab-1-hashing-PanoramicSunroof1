@@ -51,7 +51,7 @@ Answer the following:
 hash)
 
 ```
-
+7589hotdogs 000001241c340a55344ea648213a3806e77f2e1cf854d1c33e6a3aee0dbae4cd  -
 ```
 
 * How many words were in your dictionary?
