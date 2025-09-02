@@ -1,13 +1,17 @@
 #!/bin/bash
-# Usage: ./minermm.sh "word" "number of iterations"
 
-# First arg = word, second arg = how many iterations
+#usage ./minermm.sh
 
-word="$1"
-limit="$2"
+# loop through each word in dictionary
+for word in $(cat ../data/dictionary); do
+  # try nonces 1 through 10000 for each word
+  for nonce in $(seq 1 10000); do
+    combo="${nonce}${word}"
+    hash=$(printf "%s" "$combo" | sha256sum | awk '{print $1}')
 
-for ((i=1; i<=limit; i++)); do
-    input="${i}${word}"
-    hash=$(echo -n "$input" | sha256sum | awk '{print $1}')
-    echo "$input -> $hash"
+    # check if hash starts with 000
+    if [[ $hash == 000* ]]; then
+      echo "$hash - $combo"
+    fi
+  done
 done
