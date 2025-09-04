@@ -34,8 +34,7 @@ if we used a nonce for each hashed field there should be 54,684 combinations (10
 If this were actual data I'd store this data set with nonce as it requires an attacker to guess many times more than if it were simply salted. 
 
 ```bash
-please put any cool bash one-liners or other piped commands you
-learned/struggled with for task 1 here
+I didn't really learn anything new /cool for both tasks
 ```
 
 ---
@@ -55,15 +54,30 @@ hash)
 ```
 
 * How many words were in your dictionary?
+
+There are 16 words in my dictionary
+
 * How many nonces did your code iterate over?
+
+My code iterated over 10,000 nonces
+
 * What was the maximum number of hashes your code *could* compute given the above?
+
+The maximum number of hases my code could compute was 160,000
+
 * What did you think about Task 2?
+
+Task 2 wasn't to bad, I found it interesting how quickly the difficulty scales when trying to generate hashes with more leading zeros.
+
 * Is there a better way than brute force to attempt to get higher valued coins?
+
+I can't exactly think of better methods tobrute force but overall just having better hardware would make brute forcing much better.
+
 * Why or why not?
 
+A better computer better hardware the faster you computer can computate hashes.
 
 ```bash
-please put any cool bash one-liners or other piped commands you
-learned/struggled with for task 2 here
+I didn't really learn anything new/cool for both tasks
 ```
 
