@@ -21,7 +21,7 @@ I created 42 salts, 1 for each unique person which then applied to every instanc
   of all students (assume I know all potential secret IDs and have your 
   `salted-data.csv`)
 
-There should be 1764 possilbe combinations you'd need to try to figure out the secret id of all the students. (42*42)
+There should be 1764 possible combinations you'd need to try to figure out the secret id of all the students. (42*42)
 
 * Instead of salts, if you were to use a nonce (unique number for each hashed
   field) how many possible combinations would I need to try?
